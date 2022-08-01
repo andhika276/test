@@ -20,7 +20,7 @@ public class HQLQuery {
 		session.beginTransaction();
 		   
 		//Bagian ini adalah contoh query pada HQL yang nantinya digunakan untuk mengquery database di postgre
-		Query query =session.createQuery("from TestApplication");
+		Query query =session.createQuery("from employee");
 		List users = query.list();
 
 		session.getTransaction().commit();
